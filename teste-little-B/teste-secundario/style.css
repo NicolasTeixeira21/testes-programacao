@@ -41,19 +41,21 @@ button {
 }
 
 .chamativo {
-    background-color: rgb(174, 109, 109);
+    background-color: #ff0000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
 }
 
 .lookhere {
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
-    background-color: red;
 }

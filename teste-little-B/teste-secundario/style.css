@@ -8,6 +8,8 @@
 }
 
 header {
+    background-color: rgb(49, 180, 158);
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,4 +38,22 @@ button {
     border-radius: 40px;
     border: none;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.574);
+}
+
+.chamativo {
+    background-color: rgb(174, 109, 109);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lookhere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: red;
 }

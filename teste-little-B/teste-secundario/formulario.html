@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+    background-color: rgb(49, 180, 158);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    width: 100%;
+    }
+
+    nav > a {
+    position: relative;
+    margin-left: 55px;
+    text-decoration: none;
+    }
+
+    nav > button {
+    position: relative;
+    margin-left: 55px;
+    }
+
+    nav > a > abbr {
+    text-decoration: none;
+    }
+
+    button {
+    width: 100px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.574);
+    }
+
+    button:hover {
+    cursor: pointer;
+    }
+
+    div#formulario {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Little Bilíngue</h1>
+        <nav>
+            <a href="index.html"><abbr title="Casa">Home</abbr></a>
+            <a href="#"><abbr title="Cursos">Courses</abbr></a>
+            <a href="game.html"><abbr title="Jogos">Games</abbr></a>
+            <a href="#"><abbr title="Sobre Nós">About Us</abbr></a>
+            <button type="submit"><a href="formulario.html">Log In</a></button>
+        </nav>
+    </header>
+    <div id="formulario">
+        <h1>Log In</h1>
+        <form action="form.php" method="post">
+            <div class="register">
+                <input type="email" name="iemail" id="iemail">
+                <label for="iemail">E-mail</label>
+            </div>
+            <div class="register">
+                <input type="password" name="isenha" id="isenha">
+                <label for="isenha">Password</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

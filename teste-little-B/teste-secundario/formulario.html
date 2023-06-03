@@ -51,10 +51,13 @@
     }
 
     div#formulario {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: blue;
+        width: 350px;
+        height: 450px;
     }
     </style>
 </head>
@@ -73,12 +76,10 @@
         <h1>Log In</h1>
         <form action="form.php" method="post">
             <div class="register">
-                <input type="email" name="iemail" id="iemail">
-                <label for="iemail">E-mail</label>
+                <input type="email" name="iemail" id="iemail" placeholder="E-mail">
             </div>
             <div class="register">
-                <input type="password" name="isenha" id="isenha">
-                <label for="isenha">Password</label>
+                <input type="password" name="isenha" id="isenha" placeholder="Password">
             </div>
         </form>
     </div>
